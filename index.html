@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WumpaFind — Descubra filmes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <nav class="navbar">
+
+        <a href="#" class="logo">
+            <img
+                src="assets/wumpa_logo.png"
+                alt="Wumpa"
+            >
+
+            <div class="logo-texto">
+                <span>WUMPAFIND</span>
+                <small>movie discovery</small>
+            </div>
+        </a>
+
+        <span class="nav-text">
+            DESCUBRA ALGO NOVO
+        </span>
+
+    </nav>
+
+    <main>
+
+        <section class="hero">
+
+            <span class="tag">
+                FILMES • DESCOBERTAS • HISTÓRIAS
+            </span>
+
+            <h1>
+                Seu próximo filme
+                <span>começa aqui.</span>
+            </h1>
+
+            <p class="hero-text">
+                Explore filmes, descubra avaliações e
+                encontre novas histórias para assistir.
+            </p>
+
+            <div class="pesquisa">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input
+                    type="text"
+                    id="campoPesquisa"
+                    placeholder="Pesquise Matrix, Interestelar, Duna..."
+                    autocomplete="off"
+                >
+
+                <button id="botaoPesquisar">
+                    Buscar
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="resultados">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-label">
+                        WUMPA COLLECTION
+                    </span>
+
+                    <h2 id="tituloResultados">
+                        Filmes populares
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div
+                id="listaFilmes"
+                class="filmes"
+            ></div>
+
+        </section>
+
+    </main>
+
+    <div
+        id="modalFilme"
+        class="modal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-overlay"
+            id="modalOverlay"
+        ></div>
+
+        <div class="modal-container">
+
+            <button
+                id="fecharModal"
+                class="fechar-modal"
+                aria-label="Fechar"
+            >
+                ×
+            </button>
+
+            <div id="conteudoModal"></div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-brand">
+
+            <img
+                src="assets/wumpa_logo.png"
+                alt="Wumpa"
+            >
+
+            <div>
+                <strong>WUMPAFIND</strong>
+                <span>movie discovery</span>
+            </div>
+
+        </div>
+
+        <p>
+            Dados e imagens fornecidos por TMDB.
+            Este produto utiliza a API do TMDB,
+            mas não é endossado ou certificado pelo TMDB.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
